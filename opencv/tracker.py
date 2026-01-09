@@ -16,5 +16,6 @@ detector = cv.aruco.ArucoDetector(dictionary, detector_params)
 
 output_img = input_img.copy()
 cv.aruco.drawDetectedMarkers(output_img, markerCorners, markerIds)
+cv.imshow("Input", input_img)
 cv.imshow("Output", output_img)
 k = cv.waitKey(0)
